@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout | JKLUX</title>
+  <meta name="description" content="Complete your JKLUX checkout.">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="site-header" data-header>
+    <a class="brand" href="index.html">JKLUX</a>
+    <button class="nav-toggle" type="button" data-nav-toggle aria-label="Open menu"><span></span><span></span></button>
+    <nav class="site-nav" data-site-nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a class="cart-link" href="cart.html">Cart <span data-cart-count>0</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero compact">
+      <p class="eyebrow">Secure checkout</p>
+      <h1>Checkout</h1>
+    </section>
+
+    <section class="section checkout-layout">
+      <form class="checkout-form" data-checkout-form>
+        <div class="form-section">
+          <h2>Contact</h2>
+          <label>Email<input type="email" name="email" required placeholder="you@example.com"></label>
+          <label>Phone<input type="tel" name="phone" required placeholder="+1 555 000 0000"></label>
+        </div>
+        <div class="form-section">
+          <h2>Shipping</h2>
+          <div class="two-column">
+            <label>First name<input type="text" name="firstName" required></label>
+            <label>Last name<input type="text" name="lastName" required></label>
+          </div>
+          <label>Address<input type="text" name="address" required></label>
+          <div class="two-column">
+            <label>City<input type="text" name="city" required></label>
+            <label>Postal code<input type="text" name="postal" required></label>
+          </div>
+        </div>
+        <div class="form-section">
+          <h2>Payment</h2>
+          <label>Card number<input type="text" name="card" required inputmode="numeric" placeholder="4242 4242 4242 4242"></label>
+          <div class="two-column">
+            <label>Expiry<input type="text" name="expiry" required placeholder="MM/YY"></label>
+            <label>CVC<input type="text" name="cvc" required inputmode="numeric"></label>
+          </div>
+        </div>
+        <button class="button button-dark full-width" type="submit">Place Order</button>
+        <p class="form-message" data-checkout-message role="status"></p>
+      </form>
+      <aside class="order-summary" data-checkout-summary></aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>JKLUX</p>
+    <span>Premium monochrome clothing.</span>
+  </footer>
+
+  <script src="assets/store.js"></script>
+</body>
+</html>

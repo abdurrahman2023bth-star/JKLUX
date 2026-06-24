@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | JKLUX</title>
+  <meta name="description" content="Contact JKLUX for styling, order, and wholesale inquiries.">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="site-header" data-header>
+    <a class="brand" href="index.html">JKLUX</a>
+    <button class="nav-toggle" type="button" data-nav-toggle aria-label="Open menu"><span></span><span></span></button>
+    <nav class="site-nav" data-site-nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a class="cart-link" href="cart.html">Cart <span data-cart-count>0</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero compact">
+      <p class="eyebrow">Contact</p>
+      <h1>How can we help?</h1>
+      <p>For order support, styling help, or partnership inquiries, send a note to the JKLUX team.</p>
+    </section>
+
+    <section class="section contact-layout">
+      <form class="contact-form" data-contact-form>
+        <label>Name<input type="text" name="name" required></label>
+        <label>Email<input type="email" name="email" required></label>
+        <label>Message<textarea name="message" rows="6" required></textarea></label>
+        <button class="button button-dark" type="submit">Send Message</button>
+        <p class="form-message" data-contact-message role="status"></p>
+      </form>
+      <div class="contact-panel">
+        <h2>JKLUX Studio</h2>
+        <p>Email: hello@jklux.com</p>
+        <p>Phone: +1 212 555 0198</p>
+        <p>Hours: Monday to Friday, 9 AM to 6 PM</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>JKLUX</p>
+    <span>Premium monochrome clothing.</span>
+  </footer>
+
+  <script src="assets/store.js"></script>
+</body>
+</html>

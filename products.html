@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products | JKLUX</title>
+  <meta name="description" content="Shop the JKLUX premium black and white clothing collection.">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="site-header" data-header>
+    <a class="brand" href="index.html">JKLUX</a>
+    <button class="nav-toggle" type="button" data-nav-toggle aria-label="Open menu"><span></span><span></span></button>
+    <nav class="site-nav" data-site-nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a class="cart-link" href="cart.html">Cart <span data-cart-count>0</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero compact">
+      <p class="eyebrow">Shop JKLUX</p>
+      <h1>Product Collection</h1>
+      <p>Premium essentials in a disciplined black-and-white wardrobe system.</p>
+    </section>
+
+    <section class="section">
+      <div class="shop-toolbar">
+        <p><span data-product-total>0</span> pieces</p>
+        <div class="filter-group" aria-label="Product filters">
+          <button class="filter-button active" type="button" data-filter="all">All</button>
+          <button class="filter-button" type="button" data-filter="Oversized T-Shirts">Oversized T-Shirts</button>
+          <button class="filter-button" type="button" data-filter="Premium Shirts">Premium Shirts</button>
+          <button class="filter-button" type="button" data-filter="Cargo Pants">Cargo Pants</button>
+          <button class="filter-button" type="button" data-filter="Jeans">Jeans</button>
+        </div>
+      </div>
+      <div class="product-grid" data-product-list></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>JKLUX</p>
+    <span>Premium monochrome clothing.</span>
+  </footer>
+
+  <script src="assets/store.js"></script>
+</body>
+</html>
